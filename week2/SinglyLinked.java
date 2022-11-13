@@ -48,6 +48,7 @@ class SinglyLinked {
             Node newNode=new Node();
             newNode.data=data;
             newNode.next=null;
+            System.out.println(newNode.data);
             temp.next=newNode;
         }
 
@@ -119,9 +120,9 @@ class SinglyLinked {
         insertInLinkedList(head,6);
         insertInLinkedList(head,7);
         insertInLinkedList(head,8);
-        insertInLinkedList(head,9);
+        // insertInLinkedList(head,9);
 
-        display(head);
+        // display(head);
 
         // insertInSpecificPosition(head, 2, 3);
 
