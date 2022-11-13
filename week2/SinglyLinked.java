@@ -63,9 +63,6 @@ class SinglyLinked {
             head.next=null;
         }else{
             Node temp=head;
-            // while(temp.next!=null){
-            //     temp=temp.next;
-            // }
 
             for(int i=1;i<position;i++){
                 temp=temp.next;
