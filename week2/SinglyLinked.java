@@ -54,15 +54,6 @@ class SinglyLinked {
             System.out.println(temp.next.data);
 
         }
-
-        // Node temp=head;
-        //     while(temp.next!=null){
-        //         temp=temp.next;
-        //     }
-        //     Node newNode=new Node();
-        //     newNode.data=data;
-        //     newNode.next=null;
-        //     temp.next=newNode;
     }
 
 //inserting at specifc postion
