@@ -37,7 +37,7 @@ class SinglyLinked {
 
 //for insesrting at last;
     public static void insertInLinkedList(Node head, int data){
-        if(head.data==0){//initializing a head, head.data=0
+        if(head.data==0 && head.next==null){//initializing a head, head.data=0
             head.data=data;
             // head.next=null;
         }else{
@@ -113,7 +113,7 @@ class SinglyLinked {
         // Node head=new Node();
         // head.next=null;
         Node head=new Node();
-        System.out.println(head.data);
+        // System.out.println(head.data);
         // head=null;
         insertInLinkedList(head,4);
         insertInLinkedList(head,6);
