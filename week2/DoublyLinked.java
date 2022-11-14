@@ -71,6 +71,15 @@ public class DoublyLinked {
         nextNode.prev=temp;
     }
 
+    public static Node removeAtFirst(Node head){
+        Node temp=head.next;
+        head.next=null;
+        temp.prev=null;
+        head=temp;
+
+        return head;
+    }
+
     public static void display(Node head){
         Node temp=head;
         while(temp!=null){
