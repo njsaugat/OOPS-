@@ -64,7 +64,7 @@ public class DoublyLinked {
 
         if(nextNode.next==null){//at last
             temp.next=null;
-            
+            nextNode.prev=null;
         }
 
         temp.next=nextNode.next;
