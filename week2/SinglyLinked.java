@@ -51,7 +51,7 @@ class SinglyLinked {
             // System.out.print(temp.data);
             // System.out.println(newNode.data);
             temp.next=newNode;
-            System.out.println(temp.next.data);
+            // System.out.println(temp.next.data);
 
         }
     }
@@ -85,7 +85,22 @@ class SinglyLinked {
     }
 
     public static void remove(Node head,int position){
-        
+        Node temp=head;
+        for(int i=1;i<position-1;i++){
+            temp=temp.next;
+        }
+
+        Node nextNode=temp.next;
+        if(nextNode.next==null){//at last
+            temp.next=null;
+        }
+        temp.next=nextNode.next;
+    }
+
+    public static Node removeAtFirst(Node head){
+        Node temp=head.next;
+        head=temp;
+        return head;
     }
 
     public static void display(Node head){
@@ -115,6 +130,15 @@ class SinglyLinked {
         insertInLinkedList(head,8);
         insertInLinkedList(head,9);
 
+        display(head);
+        System.out.println("");
+        
+        remove(head, 3);
+        System.out.println("");
+        display(head);
+        System.out.println("");
+        
+        remove(head, 4);
         display(head);
         // System.out.println("");
         // head=insertInFirst(head, 1);
