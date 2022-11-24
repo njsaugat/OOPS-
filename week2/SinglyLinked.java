@@ -188,22 +188,25 @@ class SinglyLinked {
 
     public static Node reverseLinkedList(Node head){
         Node p=head;
-        Node q=null;
-        Node r=null;
-        while(p.next!=null){
+        Node q=head;
+        Node r=head;
+        int counter=0;
+        while(p!=null){
             r=q;
             q=p;
             p=p.next;
-            r.next=q;
+            if(r==head && counter==0){//first node;counter runs only once
+                r.next=null;
+                counter++;
+            }else{
+                q.next=r;
+            }
 
         }
         head=q;
         return head;
         // after completion:
         // p->null, q->last, r->2ndlast
-        
-
-
     }
     public static void main(String[] args){
         Node head=new Node();
@@ -251,20 +254,26 @@ class SinglyLinked {
         // System.out.println(getNth(head, 2));
 
         // insertInLinkedList(head, 6);
+
+        // head=sortedInsert(head,9);
+        // head=sortedInsert(head,4);
+        // insertInLinkedList(head, 8);
+        sortedInsert(head, 8);
         System.out.println("The current linked list is ");
-        display(head);
+        // display(head);
         
-        System.out.println("");
-        head=sortedInsert(head,9);
-        head=sortedInsert(head,4);
-        System.out.println("The current linked list after sorted insert  is ");
+        // System.out.println("");
+        // removeDuplicates(head);
+        // System.out.println("The current linked list after duplicates removed  is ");
         display(head);
+        // System.out.println("The current linked list after sorted insert  is ");
         // System.out.println("The nth  element of linked list is " + );
         // System.out.println("The count of the element linked list is "+count(head,6));
-        // System.out.println("");
         // System.out.println("The length of linked list is "+length(head));
-        // head=reverseLinkedList(head);
-        // display(head);
+        System.out.println("");
+        head=reverseLinkedList(head);
+        System.out.println("The current reversed linked list is ");
+        display(head);
 
         // getNth(head, 0)
         // display(head);
