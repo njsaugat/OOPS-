@@ -208,6 +208,33 @@ class SinglyLinked {
         // after completion:
         // p->null, q->last, r->2ndlast
     }
+
+
+    public static void recursiveReverseLinkedList(Node p, Node q, Node r){
+        
+        if(p==null){
+            q.next=r;
+            return;
+        }else{
+            recursiveReverseLinkedList(p.next, p, q);
+            q.next=r;
+            return;
+        }
+    }
+
+    public static Node reverseRecursive(Node head) {
+        if(head == null) {
+            return head;
+        }
+        if(head.next == null) {
+            return head;
+        }
+        Node newHeadNode = reverseRecursive(head.next);
+ 
+        head.next.next = head;
+        head.next = null;
+        return newHeadNode;
+    }
     public static void main(String[] args){
         Node head=new Node();
         insertInLinkedList(head,6);
@@ -271,8 +298,8 @@ class SinglyLinked {
         // System.out.println("The count of the element linked list is "+count(head,6));
         // System.out.println("The length of linked list is "+length(head));
         System.out.println("");
-        head=reverseLinkedList(head);
-        System.out.println("The current reversed linked list is ");
+        head=reverseRecursive(head);
+        System.out.println("The current reversed linked list recursive is ");
         display(head);
 
         // getNth(head, 0)
