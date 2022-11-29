@@ -1,4 +1,15 @@
 package week3;
+
+public class DateTest {
+    public static void main(String[] args){
+        Date d1=new Date(7,11,2018);
+        System.out.println(d1.getMonth());
+        System.out.println(d1.getDay());
+        System.out.println(d1.getMonth());
+        System.out.println(d1.getDate());
+
+    }
+}
 class Date{
     private int month;
     private int day;
@@ -37,8 +48,4 @@ class Date{
         return this.month+"/"+this.day+"/"+this.year;
     }
 }
-public class DateTest {
-    public static void main(String[] args){
-        
-    }
-}
+
