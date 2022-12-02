@@ -7,9 +7,9 @@ public class AccountTest{
         Account f1=new Account();
         f1.setBalance(40000);
         f1.debit(30000);
-        System.out.println(f1.getBalance());
+        System.out.println("The balance is currently is "+f1.getBalance());
         f1.debit(20000);
-        System.out.println(f1.getBalance());
+        System.out.println("The balance is currently is "+ f1.getBalance());
     }
 } 
 
