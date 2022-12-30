@@ -46,7 +46,7 @@ class Circle implements Shape {
        shapes[1] = new Rectangle(4, 6);
  
        for (Shape shape : shapes) {
-          System.out.println("Area: " + shape.getAre());
+          System.out.println("Area: " + shape.getArea());
           System.out.println("Perimeter: " + shape.getPerimeter());
        }
     }
