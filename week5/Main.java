@@ -47,7 +47,7 @@ class Circle implements Shape {
  
        for (Shape shape : shapes) {
           System.out.println("Area: " + shape.getArea());
-          System.out.println("Perimeter: " + shape.getPerimete());
+          System.out.println("Perimeter: " + shape.getPerimeter());
        }
     }
  }
