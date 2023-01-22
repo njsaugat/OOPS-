@@ -5,10 +5,10 @@ import java.io.File;
 public class RenameFile {
     public static void main(String[] args) {
         // current file path
-        File oldFile = new File("/abc.txt");
+        File oldFile = new File("abc.txt");
         // new file path
-        File newFile = new File("/xyz.txt");
-
+        File newFile = new File("xyz.txt");
+ 
         // rename file
         boolean success = oldFile.renameTo(newFile);
 
