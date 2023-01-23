@@ -1,0 +1,16 @@
+Student ID: 123
+Full Name: John Doe
+Marks: 88.0
+
+Student ID: 124
+Full Name: Ram Sam
+Marks: 85.0
+
+Student ID: 125
+Full Name: Rame Karki
+Marks: 32.0
+
+Student ID: 126
+Full Name: Syam Sharma
+Marks: 90.0
+
