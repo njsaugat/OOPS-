@@ -5,7 +5,7 @@ import java.io.File;
 public class RenameFile {
     public static void main(String[] args) {
         // current file path
-        File oldFile = new File("ab.txt");
+        File oldFile = new File("abc.txt");
         // new file path
         File newFile = new File("xyz.txt");
  
